@@ -172,10 +172,7 @@
 - (void)presentMainPage {
     TabViewController *tabVC = [[TabViewController alloc] init];
     tabVC.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
-    [self presentViewController:tabVC animated:YES completion:nil];
-
-    [tabVC onDiscoverButton:nil];
-    
+        
     DiscoverViewController *discoverVC = [[DiscoverViewController alloc] init];
     ChatViewController *chatVC = [[ChatViewController alloc] init];
     ProfileViewController *profileVC = [[ProfileViewController alloc] init];
@@ -197,6 +194,8 @@
     profileNVC.navigationBar.barTintColor = [UIColor colorWithRed:(199/255.0) green:(37/255.0) blue:(39/255.0) alpha:1];
     profileNVC.navigationBar.translucent = NO;
     profileNVC.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
+    
+    [self presentViewController:tabVC animated:YES completion:nil];
 
 }
 @end
