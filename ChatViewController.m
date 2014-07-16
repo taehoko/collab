@@ -48,6 +48,8 @@
     
 //    ChatGraceViewController *chatGraceVC = [[ChatGraceViewController alloc] init];
 //    [self.navigationController pushViewController:chatGraceVC animated:YES];
+
+    self.graceView.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:240.0f/255.0f blue:240.0f/255.0f alpha:1];
     
     ChatGraceViewController *chatGraceVC = [[ChatGraceViewController alloc] init];
     UINavigationController *chatGraceNVC = [[UINavigationController alloc] initWithRootViewController:chatGraceVC];
@@ -58,8 +60,6 @@
     chatGraceNVC.navigationBar.translucent = NO;
     chatGraceNVC.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName : [UIColor whiteColor]};
 
-    self.graceView.backgroundColor = [UIColor colorWithRed:240.0f/255.0f green:240.0f/255.0f blue:240.0f/255.0f alpha:1];
-    
     [self presentViewController:chatGraceNVC animated:YES completion:nil];
     
 }
