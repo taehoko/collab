@@ -141,7 +141,7 @@
     [self.indicatorView startAnimating];
     self.indicatorView.alpha = 1;
     
-    [self performSelector:@selector(loadCondition) withObject:nil afterDelay:1];
+    [self performSelector:@selector(loadCondition) withObject:nil afterDelay:0.5];
     
     UIActivityIndicatorView *indicatorView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     indicatorView.center = self.view.center;
@@ -155,7 +155,7 @@
     [self.indicatorView stopAnimating];
     self.indicatorView.alpha = 0;
     
-    if ([self.passwordTextField.text isEqualToString:@"password"]) {
+    if ([self.passwordTextField.text isEqualToString:@"123"]) {
         self.loginButton.enabled = YES;
         [self presentMainPage];
         

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6A164B7C1974E74600A0FA84 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A164B7A1974E74600A0FA84 /* LoginViewController.m */; };
 		6A164B7D1974E74600A0FA84 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A164B7B1974E74600A0FA84 /* LoginViewController.xib */; };
+		6A4FF13D197C9A8D00966757 /* MatchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4FF13B197C9A8D00966757 /* MatchViewController.m */; };
+		6A4FF13E197C9A8D00966757 /* MatchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A4FF13C197C9A8D00966757 /* MatchViewController.xib */; };
 		6A80867519735EFB0084F61D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A80867419735EFB0084F61D /* Foundation.framework */; };
 		6A80867719735EFB0084F61D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A80867619735EFB0084F61D /* CoreGraphics.framework */; };
 		6A80867919735EFB0084F61D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A80867819735EFB0084F61D /* UIKit.framework */; };
@@ -31,6 +33,10 @@
 		6A8086C8197366990084F61D /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8086C6197366990084F61D /* ProfileViewController.xib */; };
 		6A8086CC1974D7D00084F61D /* ChatGraceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8086CA1974D7D00084F61D /* ChatGraceViewController.m */; };
 		6A8086CD1974D7D00084F61D /* ChatGraceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A8086CB1974D7D00084F61D /* ChatGraceViewController.xib */; };
+		6A93B08B1979D6D400DADC59 /* MemberViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93B0891979D6D400DADC59 /* MemberViewController.m */; };
+		6A93B08C1979D6D400DADC59 /* MemberViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A93B08A1979D6D400DADC59 /* MemberViewController.xib */; };
+		6A93B090197A081700DADC59 /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A93B08E197A081700DADC59 /* VideoViewController.m */; };
+		6A93B091197A081700DADC59 /* VideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A93B08F197A081700DADC59 /* VideoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,9 @@
 		6A164B791974E74600A0FA84 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		6A164B7A1974E74600A0FA84 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		6A164B7B1974E74600A0FA84 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		6A4FF13A197C9A8D00966757 /* MatchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchViewController.h; sourceTree = "<group>"; };
+		6A4FF13B197C9A8D00966757 /* MatchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchViewController.m; sourceTree = "<group>"; };
+		6A4FF13C197C9A8D00966757 /* MatchViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MatchViewController.xib; sourceTree = "<group>"; };
 		6A80867119735EFB0084F61D /* collab.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collab.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A80867419735EFB0084F61D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6A80867619735EFB0084F61D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -78,6 +87,12 @@
 		6A8086C91974D7D00084F61D /* ChatGraceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatGraceViewController.h; sourceTree = "<group>"; };
 		6A8086CA1974D7D00084F61D /* ChatGraceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatGraceViewController.m; sourceTree = "<group>"; };
 		6A8086CB1974D7D00084F61D /* ChatGraceViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChatGraceViewController.xib; sourceTree = "<group>"; };
+		6A93B0881979D6D400DADC59 /* MemberViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberViewController.h; sourceTree = "<group>"; };
+		6A93B0891979D6D400DADC59 /* MemberViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberViewController.m; sourceTree = "<group>"; };
+		6A93B08A1979D6D400DADC59 /* MemberViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberViewController.xib; sourceTree = "<group>"; };
+		6A93B08D197A081700DADC59 /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		6A93B08E197A081700DADC59 /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		6A93B08F197A081700DADC59 /* VideoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VideoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +158,15 @@
 				6A8086BA197366670084F61D /* DiscoverViewController.h */,
 				6A8086BB197366670084F61D /* DiscoverViewController.m */,
 				6A8086BC197366670084F61D /* DiscoverViewController.xib */,
+				6A4FF13A197C9A8D00966757 /* MatchViewController.h */,
+				6A4FF13B197C9A8D00966757 /* MatchViewController.m */,
+				6A4FF13C197C9A8D00966757 /* MatchViewController.xib */,
+				6A93B0881979D6D400DADC59 /* MemberViewController.h */,
+				6A93B0891979D6D400DADC59 /* MemberViewController.m */,
+				6A93B08A1979D6D400DADC59 /* MemberViewController.xib */,
+				6A93B08D197A081700DADC59 /* VideoViewController.h */,
+				6A93B08E197A081700DADC59 /* VideoViewController.m */,
+				6A93B08F197A081700DADC59 /* VideoViewController.xib */,
 				6A80868319735EFB0084F61D /* AppDelegate.h */,
 				6A80868419735EFB0084F61D /* AppDelegate.m */,
 				6A8086AD197366430084F61D /* ChatViewController.h */,
@@ -273,7 +297,10 @@
 				6A80867F19735EFB0084F61D /* InfoPlist.strings in Resources */,
 				6A8086B1197366430084F61D /* ChatViewController.xib in Resources */,
 				6A8086B61973664D0084F61D /* TabViewController.xib in Resources */,
+				6A93B08C1979D6D400DADC59 /* MemberViewController.xib in Resources */,
 				6A80868719735EFB0084F61D /* Images.xcassets in Resources */,
+				6A4FF13E197C9A8D00966757 /* MatchViewController.xib in Resources */,
+				6A93B091197A081700DADC59 /* VideoViewController.xib in Resources */,
 				6A8086BE197366670084F61D /* DiscoverViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,13 +320,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A93B090197A081700DADC59 /* VideoViewController.m in Sources */,
 				6A164B7C1974E74600A0FA84 /* LoginViewController.m in Sources */,
+				6A4FF13D197C9A8D00966757 /* MatchViewController.m in Sources */,
 				6A8086BD197366670084F61D /* DiscoverViewController.m in Sources */,
 				6A80868519735EFB0084F61D /* AppDelegate.m in Sources */,
 				6A8086CC1974D7D00084F61D /* ChatGraceViewController.m in Sources */,
 				6A8086B0197366430084F61D /* ChatViewController.m in Sources */,
 				6A80868119735EFB0084F61D /* main.m in Sources */,
 				6A8086C7197366990084F61D /* ProfileViewController.m in Sources */,
+				6A93B08B1979D6D400DADC59 /* MemberViewController.m in Sources */,
 				6A8086B51973664D0084F61D /* TabViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

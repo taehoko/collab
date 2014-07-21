@@ -52,6 +52,9 @@
     [self.view addSubview:discoverVC.view];
     discoverVC.view.frame = self.contentView.frame;
     
+    [self addChildViewController:discoverVC];
+    [discoverVC didMoveToParentViewController:self];
+    
     [UIView animateWithDuration:0.2 animations:^{
         self.tabSelectedIndicator.center = CGPointMake(107/2, 1.5);
         self.tabDiscoverImage.alpha = 0.8;
@@ -65,6 +68,9 @@
     [self.view addSubview:chatVC.view];
     chatVC.view.frame = self.contentView.frame;
     
+    [self addChildViewController:chatVC];
+    [chatVC didMoveToParentViewController:self];
+    
     [UIView animateWithDuration:0.2 animations:^{
         self.tabSelectedIndicator.center = CGPointMake(320/2, 1.5);
         self.tabDiscoverImage.alpha = 0.5;
@@ -72,6 +78,7 @@
         self.tabProfileImage.alpha = 0.5;
     }];
 }
+
 
 - (IBAction)onProfileButton:(id)sender {
     ProfileViewController *profileVC = self.viewControllers[2];

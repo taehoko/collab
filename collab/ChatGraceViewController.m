@@ -12,6 +12,10 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *textInputField;
 @property (weak, nonatomic) IBOutlet UIView *textInputContainerView;
+- (IBAction)captureVideo:(id)sender;
+
+@property (nonatomic) UIImagePickerController *imagePickerController;
+@property (nonatomic) IBOutlet UIView *overlayView;
 
 @end
 
@@ -105,6 +109,31 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)captureVideo:(id)sender {
+    [self showImagePickerForSourceType:UIImagePickerControllerSourceTypePhotoLibrary];
+}
+
+- (void)showImagePickerForSourceType:(UIImagePickerControllerSourceType)sourceType
+{
+    
+    UIImagePickerController *imagePickerController = [[UIImagePickerController alloc] init];
+    imagePickerController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    imagePickerController.sourceType = sourceType;
+    imagePickerController.delegate = self;
+    
+    if (sourceType == UIImagePickerControllerSourceTypeCamera)
+    {
+        imagePickerController.showsCameraControls = YES;
+        
+        [[NSBundle mainBundle] loadNibNamed:@"OverlayView" owner:self options:nil];
+        self.overlayView.frame = imagePickerController.cameraOverlayView.frame;
+        imagePickerController.cameraOverlayView = self.overlayView;
+        self.overlayView = nil;
+    }
+    self.imagePickerController = imagePickerController;
+    [self presentViewController:self.imagePickerController animated:YES completion:nil];
 }
 
 @end

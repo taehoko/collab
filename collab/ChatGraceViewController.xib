@@ -100,6 +100,16 @@
                             <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
                             <textInputTraits key="textInputTraits"/>
                         </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Bzf-4K-LgP">
+                            <rect key="frame" x="271" y="7" width="36" height="36"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" image="record">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="captureVideo:" destination="-1" eventType="touchUpInside" id="5Oq-gZ-5E2"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="deviceRGB"/>
                 </view>
@@ -113,5 +123,6 @@
     <resources>
         <image name="chatprofileGrace" width="75" height="75"/>
         <image name="chatprofilePewDiePie" width="75" height="75"/>
+        <image name="record" width="36" height="36"/>
     </resources>
 </document>
